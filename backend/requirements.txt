@@ -1,0 +1,21 @@
+# Exact-pinned to the verified working environment (matches production_metadata.json's
+# environment_versions and this repo's venv). scikit-learn and numpy are pinned exactly
+# because they directly affect joblib/pickle compatibility with the frozen
+# production_model.joblib — scikit-learn does not guarantee unpickling compatibility
+# across versions, so an unconstrained `>=` risks a future `pip install` silently breaking
+# (or subtly changing) inference against the frozen model.
+rdkit==2026.3.5
+pandas==3.0.5
+numpy==2.4.6
+scikit-learn==1.9.0
+xgboost==3.4.0
+shap==0.52.0
+fastapi==0.141.1
+uvicorn==0.52.1
+joblib==1.5.3
+requests==2.34.2
+pytest==9.1.1
+pytest-cov==7.1.0
+matplotlib==3.11.1
+seaborn==0.13.2
+python-multipart==0.0.32

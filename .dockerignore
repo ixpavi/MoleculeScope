@@ -1,0 +1,41 @@
+# Virtual environments / dependency caches
+backend/venv
+frontend/node_modules
+frontend/dist
+frontend/coverage
+
+# Test artifacts
+backend/tests/coverage_html
+backend/.pytest_cache
+.pytest_cache
+.coverage
+**/__pycache__
+**/*.pyc
+
+# Large training/analysis artifacts not needed at inference time. Listed individually
+# (rather than excluding the whole features/results directories) because
+# features/fingerprints.npz, features/descriptors.csv, and results/figures/ ARE needed at
+# runtime (applicability domain search, descriptor percentile ranks, and the Performance
+# tab respectively) — Dockerfile COPYs those explicitly, and a blanket directory exclusion
+# here would remove them from the build context before COPY ever runs.
+features/combined.npz
+features/feature_summary.md
+features/feature_metadata.json
+results/models
+results/predictions
+results/metrics
+results/feature_importance
+results/summaries
+results/analysis
+results/model_comparison.csv
+results/model_comparison.md
+splits
+backend/data/B3DB_classification_raw.tsv
+
+# Docs, git, editor files
+docs
+.git
+.gitignore
+.vscode
+.idea
+*.md

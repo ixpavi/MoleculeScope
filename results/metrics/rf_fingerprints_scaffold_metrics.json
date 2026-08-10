@@ -1,0 +1,32 @@
+{
+  "experiment": "rf_fingerprints_scaffold",
+  "model_type": "rf",
+  "feature_representation": "fingerprints",
+  "split_type": "scaffold",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 6.717325925827026,
+  "train_metrics": {
+    "accuracy": 0.8965683130211675,
+    "precision": 0.8761200716845878,
+    "recall": 0.9770172370721959,
+    "f1": 0.9238218967757175,
+    "macro_f1": 0.8813866038185704,
+    "roc_auc": 0.9724946549827889,
+    "pr_auc": 0.9838578764385101
+  },
+  "test_metrics": {
+    "accuracy": 0.6683771648492624,
+    "precision": 0.654974946313529,
+    "recall": 0.9631578947368421,
+    "f1": 0.7797187899446102,
+    "macro_f1": 0.554580536347143,
+    "roc_auc": 0.7447947454844007,
+    "pr_auc": 0.8277114340344345
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

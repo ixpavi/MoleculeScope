@@ -1,0 +1,32 @@
+{
+  "experiment": "rf_descriptors_random",
+  "model_type": "rf",
+  "feature_representation": "descriptors",
+  "split_type": "random",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 1.1862232685089111,
+  "train_metrics": {
+    "accuracy": 0.9369788325849904,
+    "precision": 0.9455680399500624,
+    "recall": 0.9558303886925795,
+    "f1": 0.9506715200200828,
+    "macro_f1": 0.9317175580122612,
+    "roc_auc": 0.983624056949108,
+    "pr_auc": 0.9903986289891812
+  },
+  "test_metrics": {
+    "accuracy": 0.8736369467607441,
+    "precision": 0.8788167938931297,
+    "recall": 0.929364278506559,
+    "f1": 0.9033840117704757,
+    "macro_f1": 0.8604037760427912,
+    "roc_auc": 0.9381919671408878,
+    "pr_auc": 0.9589746941747194
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

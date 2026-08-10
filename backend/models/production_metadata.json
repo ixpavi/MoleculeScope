@@ -1,0 +1,62 @@
+{
+  "model_type": "RandomForestClassifier",
+  "model_version": "1.0.0",
+  "training_dataset_name": "b3db_cleaned.csv",
+  "training_sample_count": 7795,
+  "feature_names": [
+    "Molecular Weight",
+    "LogP",
+    "TPSA",
+    "H-Bond Donors",
+    "H-Bond Acceptors",
+    "Rotatable Bonds",
+    "Ring Count",
+    "Aromatic Ring Count",
+    "Heavy Atom Count",
+    "Fraction CSP3",
+    "Formal Charge"
+  ],
+  "feature_descriptions": {
+    "Molecular Weight": "Molecular weight (bulk mass indicator)",
+    "LogP": "Wildman-Crippen partition coefficient (lipophilicity)",
+    "TPSA": "Topological polar surface area (molecular polarity)",
+    "H-Bond Donors": "Number of hydrogen-bond donors",
+    "H-Bond Acceptors": "Number of hydrogen-bond acceptors",
+    "Rotatable Bonds": "Number of rotatable bonds (conformational flexibility)",
+    "Ring Count": "Total number of rings",
+    "Aromatic Ring Count": "Number of aromatic rings",
+    "Heavy Atom Count": "Count of non-hydrogen atoms",
+    "Fraction CSP3": "Fraction of sp3 hybridized carbons (saturation index)",
+    "Formal Charge": "Net formal charge of the molecule"
+  },
+  "target_mapping": {
+    "BBB+": 1,
+    "BBB-": 0
+  },
+  "hyperparameters": {
+    "n_estimators": 250,
+    "max_depth": 12,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "training_duration_seconds": 1.3523635864257812,
+  "training_timestamp": "2026-08-09T06:38:32Z",
+  "environment_versions": {
+    "scikit_learn": "1.9.0",
+    "rdkit": "2026.03.5",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "evaluation_benchmark": {
+    "source_reference": "Phase 5 Bemis-Murcko scaffold-split evaluation model",
+    "metrics": {
+      "accuracy": 0.7447,
+      "macro_f1": 0.7212,
+      "roc_auc": 0.8017,
+      "pr_auc": 0.8504
+    },
+    "note": "Evaluation metrics belong to the scaffold-split model. No independent test metric is claimed for this retrained production model."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "n_test_samples": 1559,
+  "mcnemar": {
+    "rf_right_xgb_wrong": 130,
+    "xgb_right_rf_wrong": 104,
+    "p_value": 0.10199143403277071,
+    "significant_at_0.05": false
+  },
+  "bootstrap_macro_f1_diff": {
+    "n_resamples": 2000,
+    "seed": 42,
+    "rf_descriptors_macro_f1": 0.7211657720943776,
+    "xgb_combined_macro_f1": 0.6838139627435673,
+    "mean_diff_rf_minus_xgb": 0.03736746767681819,
+    "ci_95_low": 0.015434242647097852,
+    "ci_95_high": 0.059183360763449815,
+    "excludes_zero_at_95pct": true
+  }
+}

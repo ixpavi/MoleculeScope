@@ -1,0 +1,32 @@
+{
+  "experiment": "logistic_combined_random",
+  "model_type": "logistic",
+  "feature_representation": "combined",
+  "split_type": "random",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 0.27695322036743164,
+  "train_metrics": {
+    "accuracy": 0.913085311096857,
+    "precision": 0.9128440366972477,
+    "recall": 0.9543160020191822,
+    "f1": 0.9331194471865746,
+    "macro_f1": 0.9045175990511627,
+    "roc_auc": 0.9747768710400521,
+    "pr_auc": 0.9850302182629874
+  },
+  "test_metrics": {
+    "accuracy": 0.8710711994868505,
+    "precision": 0.8671003717472119,
+    "recall": 0.941473259334006,
+    "f1": 0.9027576197387518,
+    "macro_f1": 0.8557555938845995,
+    "roc_auc": 0.9465559756114894,
+    "pr_auc": 0.9651199298625763
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

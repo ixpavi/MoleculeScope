@@ -1,0 +1,45 @@
+{
+  "dataset_source": "b3db_cleaned.csv",
+  "total_molecules": 7795,
+  "seed": 42,
+  "random_split": {
+    "train_size": 6236,
+    "test_size": 1559,
+    "train_class_distribution": {
+      "bbb+_count": 3962,
+      "bbb+_pct": 63.53431686978832,
+      "bbb-_count": 2274,
+      "bbb-_pct": 36.46568313021167,
+      "total": 6236
+    },
+    "test_class_distribution": {
+      "bbb+_count": 991,
+      "bbb+_pct": 63.566388710712,
+      "bbb-_count": 568,
+      "bbb-_pct": 36.433611289288,
+      "total": 1559
+    }
+  },
+  "scaffold_split": {
+    "train_size": 6236,
+    "test_size": 1559,
+    "train_class_distribution": {
+      "bbb+_count": 4003,
+      "bbb+_pct": 64.19178960872354,
+      "bbb-_count": 2233,
+      "bbb-_pct": 35.808210391276454,
+      "total": 6236
+    },
+    "test_class_distribution": {
+      "bbb+_count": 950,
+      "bbb+_pct": 60.93649775497113,
+      "bbb-_count": 609,
+      "bbb-_pct": 39.063502245028864,
+      "total": 1559
+    },
+    "unique_scaffolds_count": 2125,
+    "acyclic_singletons_count": 311,
+    "scaffold_overlap": 0
+  },
+  "generation_timestamp": "2026-08-09T06:14:51Z"
+}

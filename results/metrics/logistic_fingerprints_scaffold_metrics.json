@@ -1,0 +1,32 @@
+{
+  "experiment": "logistic_fingerprints_scaffold",
+  "model_type": "logistic",
+  "feature_representation": "fingerprints",
+  "split_type": "scaffold",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 0.2200298309326172,
+  "train_metrics": {
+    "accuracy": 0.9323284156510584,
+    "precision": 0.934060606060606,
+    "recall": 0.9625281039220585,
+    "f1": 0.9480807086614174,
+    "macro_f1": 0.9254676103159758,
+    "roc_auc": 0.9825446074423135,
+    "pr_auc": 0.9896433664571718
+  },
+  "test_metrics": {
+    "accuracy": 0.6876202694034638,
+    "precision": 0.6902218570254725,
+    "recall": 0.8842105263157894,
+    "f1": 0.7752653437932626,
+    "macro_f1": 0.6315864048093548,
+    "roc_auc": 0.7435485264886355,
+    "pr_auc": 0.8171538855430319
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "experiment": "logistic_descriptors_random",
+  "model_type": "logistic",
+  "feature_representation": "descriptors",
+  "split_type": "random",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 0.010475635528564453,
+  "train_metrics": {
+    "accuracy": 0.8078896728672226,
+    "precision": 0.8050772626931567,
+    "recall": 0.9204946996466431,
+    "f1": 0.858926048045219,
+    "macro_f1": 0.7789605114597955,
+    "roc_auc": 0.8553919446705,
+    "pr_auc": 0.8757612129049461
+  },
+  "test_metrics": {
+    "accuracy": 0.8069275176395125,
+    "precision": 0.7979274611398963,
+    "recall": 0.9323915237134208,
+    "f1": 0.8599348534201955,
+    "macro_f1": 0.7746526692281577,
+    "roc_auc": 0.8545065803499098,
+    "pr_auc": 0.8830601116940318
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}

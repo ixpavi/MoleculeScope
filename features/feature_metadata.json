@@ -1,0 +1,61 @@
+{
+  "dataset_source": "B3DB Classification (theochem/B3DB)",
+  "num_molecules_processed": 7795,
+  "descriptor_names": [
+    "Molecular Weight",
+    "LogP",
+    "TPSA",
+    "H-Bond Donors",
+    "H-Bond Acceptors",
+    "Rotatable Bonds",
+    "Ring Count",
+    "Aromatic Ring Count",
+    "Heavy Atom Count",
+    "Fraction CSP3",
+    "Formal Charge"
+  ],
+  "descriptor_count": 11,
+  "fingerprint_settings": {
+    "type": "Morgan Circular Fingerprint (ECFP4 equivalent)",
+    "radius": 2,
+    "nBits": 2048,
+    "use_chirality": false,
+    "output_type": "binary (int8 bit vector)"
+  },
+  "combined_feature_count": 2059,
+  "rdkit_version": "2026.03.5",
+  "python_version": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]",
+  "generation_timestamp": "2026-08-09T06:11:22Z",
+  "output_files": {
+    "descriptors": "features\\descriptors.csv",
+    "fingerprints": "features\\fingerprints.npz",
+    "combined": "features\\combined.npz"
+  },
+  "quality_control_summary": {
+    "descriptor_constant_features": [],
+    "descriptor_high_correlation_pairs": [
+      {
+        "feature_1": "Molecular Weight",
+        "feature_2": "Heavy Atom Count",
+        "correlation": 0.9856106915818093
+      },
+      {
+        "feature_1": "TPSA",
+        "feature_2": "H-Bond Acceptors",
+        "correlation": 0.92007490213735
+      }
+    ],
+    "fingerprint_stats": {
+      "nan_count": 0,
+      "inf_count": 0,
+      "data_type": "int8",
+      "total_bits_per_molecule": 2048,
+      "min_active_bits": 1,
+      "max_active_bits": 142,
+      "mean_active_bits": 47.70737652341244,
+      "median_active_bits": 47.0,
+      "average_density_pct": 2.329461744307248
+    },
+    "fingerprint_determinism_verified": true
+  }
+}

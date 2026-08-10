@@ -1,0 +1,23 @@
+# Python
+backend/venv
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+backend/tests/coverage_html/
+
+# Node / frontend (frontend/.gitignore covers frontend/-relative paths in more detail)
+frontend/node_modules
+frontend/dist
+frontend/coverage
+
+# Session artifacts
+backend_server.log
+frontend_revert_preview/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db

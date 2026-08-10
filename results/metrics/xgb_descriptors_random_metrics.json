@@ -1,0 +1,32 @@
+{
+  "experiment": "xgb_descriptors_random",
+  "model_type": "xgb",
+  "feature_representation": "descriptors",
+  "split_type": "random",
+  "train_n": 6236,
+  "test_n": 1559,
+  "duration_seconds": 2.3921706676483154,
+  "train_metrics": {
+    "accuracy": 0.9158114175753689,
+    "precision": 0.9110260703181057,
+    "recall": 0.9613831398283695,
+    "f1": 0.9355274468868967,
+    "macro_f1": 0.9071261628058878,
+    "roc_auc": 0.974050422727432,
+    "pr_auc": 0.9839841874666463
+  },
+  "test_metrics": {
+    "accuracy": 0.8601667735728031,
+    "precision": 0.8510445049954587,
+    "recall": 0.9455095862764884,
+    "f1": 0.8957934990439771,
+    "macro_f1": 0.841658932757856,
+    "roc_auc": 0.9300908884182999,
+    "pr_auc": 0.9520314160622579
+  },
+  "software_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  }
+}
