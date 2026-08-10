@@ -46,7 +46,7 @@ export const MoleculeSearchInput: React.FC<MoleculeSearchInputProps> = ({ onSele
       const controller = new AbortController();
       abortRef.current = controller;
 
-      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
       fetch(`${apiBaseUrl}/api/molecules/search?q=${encodeURIComponent(trimmed)}&limit=15`, {
         signal: controller.signal,
       })
