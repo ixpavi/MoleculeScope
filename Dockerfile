@@ -22,12 +22,13 @@ FROM python:3.13-slim AS backend
 
 WORKDIR /app
 
-# libxrender1/libxext6 are required by RDKit's headless 2D drawing (rdMolDraw2D) in a
-# minimal Debian slim image; libgomp1 is required by scikit-learn's OpenMP-parallelized
-# RandomForestClassifier inference.
+# libxrender1/libxext6/libexpat1 are required by RDKit's headless 2D drawing (rdMolDraw2D)
+# in a minimal Debian slim image; libgomp1 is required by scikit-learn's
+# OpenMP-parallelized RandomForestClassifier inference.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libxrender1 \
     libxext6 \
+    libexpat1 \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
