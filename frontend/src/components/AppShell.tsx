@@ -1,7 +1,7 @@
-import { Atom, FileSpreadsheet, Gauge } from "lucide-react";
+import { Atom, FileSpreadsheet, Gauge, GitCompareArrows } from "lucide-react";
 import { Logo } from "./Logo";
 
-type Tab = "predictor" | "performance" | "batch";
+type Tab = "predictor" | "compare" | "performance" | "batch";
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -11,6 +11,7 @@ interface AppShellProps {
 
 const NAV_ITEMS: { tab: Tab; label: string; meta?: string; icon: typeof Atom }[] = [
   { tab: "predictor", label: "Predictor", icon: Atom },
+  { tab: "compare", label: "Compare", meta: "4", icon: GitCompareArrows },
   { tab: "batch", label: "Batch screener", meta: "CSV", icon: FileSpreadsheet },
   { tab: "performance", label: "Performance", icon: Gauge },
 ];

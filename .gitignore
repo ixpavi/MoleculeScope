@@ -21,3 +21,13 @@ frontend_revert_preview/
 .idea
 .DS_Store
 Thumbs.db
+
+# Local coursework and scratch files (not part of the app)
+/Team7_*
+/MoleculeScope_Poster_*.pptx
+/B3DB_EDA.ipynb
+/B3DB_Statistical_Description.ipynb
+/build/
+/data/
+/poster_*/
+.vite/
